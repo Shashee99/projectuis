@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="./assets/fonts/css/all.css">
+    <style>
+
+        body{
+            background-color: #00A778;
+
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        .container{
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            z-index: 12;
+        }
+
+        /*nav bar styling*/
+        .logo{
+            background: url("assets/logo.png");
+            width: 158px;
+            height: 148px;
+
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            padding: 55px 0px
+        }
+        ul>li>a{
+
+            font-family: 'Source Sans 3';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 10px;
+
+            color: #000000;
+        }
+        ul>li>a:hover{
+            border-bottom: 5px solid #EAFFD0 ;
+        }
+        nav{
+            display: flex;
+        }
+        .null::after{
+            content: "";
+            position: absolute;
+            height: 80vh;
+            width: 100%;
+            bottom: 0;
+            background-color: white;
+            border-radius: 20px 20px 0px 0px;
+            z-index: 1;
+        }
+        main{
+            position: relative;
+        }
+        .formcard{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin:auto;
+            bottom: 0;
+            top: 14vh;
+            width: max-content;
+
+        }
+     input[type='password']{
+            width: 100%;
+            padding: 17px 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 20px;
+            box-sizing: border-box;
+            margin: 27px 0px 0px 0px;
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #00A778;
+            border: none;
+            color: #000000;
+            text-align: center;
+            padding: 12px;
+            cursor: pointer;
+            margin: 23px 0px 0px 0px;
+            font-family: 'Source Sans 3';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            letter-spacing: 0.09em;
+            color: rgba(0, 0, 0, 0.9);
+            width: 100%;
+            border-radius: 10px;
+        }
+
+
+        .nonebg{
+            background-color: white;
+            border: 1px solid #008284;
+        }
+        .nonebg:hover{
+            background-color: #cccccc;
+        }
+        .btnsub:hover{
+            background-color: #008284;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<div class="null"></div>
+
+<div class="container">
+    <nav>
+        <div class="logo"></div>
+        <div class="navs">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="formcard">
+            <form action="">
+                <input type="password" name="uname" id="uname" placeholder="Enter new password "><br>
+                <input type="password" name="pasword" id="password" placeholder="Re-enter password"> <br>
+
+                <br>
+                <button class="button btnsub" style="vertical-align:middle"><span>Reset</span></button>
+
+            </form>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
