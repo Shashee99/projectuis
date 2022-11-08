@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/fonts/css/all.css">
+    <style>
+
+        body{
+            background-color: #00A778;
+
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        .container{
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            z-index: 12;
+        }
+
+        /*nav bar styling*/
+        .logo{
+            background: url("assets/logo.png");
+            width: 158px;
+            height: 148px;
+
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            padding: 55px 0px
+        }
+        ul>li>a{
+
+            font-family: 'Source Sans 3';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 10px;
+
+            color: #000000;
+        }
+        ul>li>a:hover{
+            border-bottom: 5px solid #EAFFD0 ;
+        }
+        nav{
+            display: flex;
+            position: relative;
+        }
+        body::after{
+            content: "";
+            position: absolute;
+            height: 80vh;
+            width: 100%;
+            bottom: 0;
+            background-color: white;
+            border-radius: 20px 20px 0px 0px;
+            z-index: 1;
+        }
+        main{
+            position: relative;
+            z-index: 6;
+            margin: 10px 0px;
+        }
+
+        input[type='text'],input[type='password']{
+            width: 100%;
+            padding: 17px 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 20px;
+            box-sizing: border-box;
+            margin: 27px 0px 0px 0px;
+        }
+
+
+
+        .logindash .logout{
+           margin: 40px 0px;
+            padding: 10px 20px ;
+            border: 1px solid #008284;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 28px;
+            cursor: pointer;
+            color: #ffff;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 900;
+            border-radius: 10px;
+            
+        }
+        .personname{
+            margin: 40px 0px;
+            padding: 10px 20px ;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.08em;
+            color: #ffff;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 900;
+
+        }
+        .logindash .logout:hover{
+            border: 1px solid #cccccc;
+        }
+        .logindash{
+            display: flex;
+            position: absolute;
+            right: 0;
+        }
+        .profile{
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 1px solid black;
+            box-shadow: 0px 2px 12px black;
+            background-image: url("assets/profiles/nila.jpg");
+            background-size: cover;
+        }
+        .logout i{
+            margin: 0px 5px;
+            font-size: 20px;
+        }
+       .functionalities{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-gap: 10px
+       }
+       .function{
+           width: 300px;
+           height:150px ;
+           border: 1px solid black;
+           border-radius: 10px;
+           position: relative;
+           cursor: pointer;
+           box-shadow: 0px 2px 2px black;
+       }
+       .nameoffun{
+           text-align: center;
+           font-size: 20px;
+           margin-top: 60px;
+           opacity: 1;
+       }
+
+       .functionalities div{
+           background-size: cover;
+       }
+        .functionalities div:nth-child(1){
+            background-image: url("assets/customerhome/4.png");
+        }
+       .functionalities div:nth-child(2){
+           background-image: url("assets/customerhome/1.png");
+          }
+        .functionalities div:nth-child(3){
+            background-image: url("assets/customerhome/2.png");
+        }
+        .functionalities div:nth-child(4){
+            background-image: url("assets/customerhome/3.png");
+        }
+        .functionalities div:nth-child(5){
+            background-image: url("assets/customerhome/6.png");
+        }
+        .functionalities div:nth-child(6){
+            background-image: url("assets/customerhome/8.png");
+        }
+        .functionalities div:nth-child(7){
+            background-image: url("assets/customerhome/5.png");
+        }
+        .functionalities div:nth-child(8){
+            background-image: url("assets/customerhome/7.png");
+        }
+        .functionalities div:nth-child(9){
+            background-image: url("assets/customerhome/9.png");
+        }
+        .functionalities div:nth-child(10){
+            background-image: url("assets/customerhome/12.png");
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <nav>
+        <div class="logo"></div>
+        <div class="navs">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="logindash">
+            <p class="personname">Hichchi NIlshan</p>
+            <p class="logout"><i class="fa-solid fa-right-from-bracket"></i>Log out</p>
+             <div class="profile">
+
+             </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="functionalities">
+            <div class="function">
+                <p class="nameoffun">
+                    Harvest
+                </p>
+            </div>
+            <div class="function">
+                <p class="nameoffun">
+                    Products
+                </p>
+            </div>
+            <div class="function">
+                <p class="nameoffun">
+                    Advisor
+                </p>
+            </div>
+            <div class="function">
+                <p class="nameoffun">
+                    Agricultural Center
+                </p>
+            </div>
+            <div class="function">
+                <p class="nameoffun">
+                    My Wishlist
+                </p>
+            </div>
+            <div class="function">
+                <p class="nameoffun">
+                    Chat Forum
+                </p>
+            </div>
+            <div class="function">
+                <p class="nameoffun">
+                    Progress
+                </p>
+            </div>
+            <div class="function">
+                <p class="nameoffun">
+                    Problem Forum
+                </p>
+            </div>
+            <div class="function">
+            <p class="nameoffun">
+                New Technologies
+            </p>
+            </div>
+            <div class="function">
+                <p class="nameoffun">
+                    Generate Report
+                </p>
+            </div>
+        </div>
+
+
+    </main>
+
+</div>
+
+</body>
+</html>
