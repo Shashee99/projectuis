@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./assets/fonts/css/all.css">
+    <style>
+
+        body{
+            background-color: #00A778;
+
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        .container{
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            z-index: 12;
+        }
+
+        /*nav bar styling*/
+        .logo{
+            background: url("assets/logo.png");
+            width: 158px;
+            height: 148px;
+
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            padding: 55px 0px
+        }
+        ul>li>a{
+
+            font-family: 'Source Sans 3';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 10px;
+
+            color: #000000;
+        }
+        ul>li>a:hover{
+            border-bottom: 5px solid #EAFFD0 ;
+        }
+        nav{
+            display: flex;
+        }
+        body::after{
+            content: "";
+            position: absolute;
+            height: 80vh;
+            width: 100%;
+            bottom: 0;
+            background-color: white;
+            border-radius: 20px 20px 0px 0px;
+            z-index: 1;
+        }
+        main{
+            position: relative;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <nav>
+        <div class="logo"></div>
+        <div class="navs">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="priceandphoto">
+             <div class="productimg">
+
+             </div>
+            <div class="price">
+                <p>Price <span>Rs 1350.00</span></p>
+            </div>
+            <div class="available">
+                <p>Available <span>10</span></p>
+            </div>
+
+
+        </div>
+        <div class="description">
+
+        </div>
+
+
+    </main>
+
+</div>
+
+</body>
+</html>

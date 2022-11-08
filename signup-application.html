@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Let's sign up</title>
-
+    <link rel="stylesheet" href="./assets/fonts/css/all.css">
 </head>
 <style>
     body{
@@ -117,7 +117,7 @@
         text-align: center;
         border: 2px dashed black;
         line-height: 40px;
-        width: 220px;
+        width: 100%;
         display: inline-block;
     }
     .fileup{
@@ -182,6 +182,14 @@
         margin:auto;
 
     }
+    #inputbtn,#inputbr{
+        display: none;
+
+    }
+    label i{
+        margin-right: 20px;
+    }
+
 </style>
 <body>
 <div class="navbg"></div>
@@ -214,13 +222,15 @@
                         <input type="text" name="gmail" id="gmail" placeholder="Gmail address"><br>
                         <div class="fileup">
                             <p class="infotext">Image of the BR license</p>
-                            <div class="inputbr"> Upload files </div> <button class="button btncancel"> Cancel</button>
+                            <label for="inputbtn" class="inputbr"><i class="fa-solid fa-upload"></i>Upload File</label>
+                            <input type="file" name="inputbtn" id="inputbr" value="input" >
                             <br>
                             <small>Attach file. File size of your documents should not exceed 10MB</small>
                         </div>
                         <div class="fileup">
                             <p>Product licenses</p>
-                            <div class="inputbr"> Upload files </div> <button class="button btncancel"> Cancel</button>
+                            <label for="inputbtn" class="inputbr"><i class="fa-solid fa-upload"></i>Upload File</label>
+                            <input type="file" name="inputbtn" id="inputbtn" value="input" >
                             <br>
                             <small>Attach file. File size of your documents should not exceed 10MB</small>
                         </div>
