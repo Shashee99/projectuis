@@ -7,7 +7,7 @@
 
 <style>
     body{
-        background-color: #00A778;
+        background: linear-gradient(90deg, #0BAB64 0%, #3BB78F 100%);
     }
     * {
         box-sizing: border-box;
@@ -60,8 +60,9 @@
         height: 100vh;
         width: 45%;
         right: 0;
-        background-color: white;
-        border-radius: 10px 0px 0px 10px;
+        background: rgba(251, 248, 243, 0.65);
+        opacity: 0.5;
+        border-radius: 41px 0px 0px 41px;
         z-index: 1;
     }
 
@@ -121,10 +122,9 @@
         font-size: 48px;
         line-height: 68px;
         letter-spacing: 0.08em;
-        padding-top: 20px;
 
         /* C3 */
-        color: #008284;
+        color: #FBF8F3;
     }
     #uname,#password{
 
@@ -137,7 +137,9 @@
         box-sizing: border-box;
         margin: 27px 0px 0px 0px;
 
-    }
+    }#password{
+        margin-bottom: 20px;
+         }
 
 
     .introphotgrid{
@@ -200,7 +202,7 @@
 
         transition: all 0.5s;
         cursor: pointer;
-        margin: 23px 0px 0px 0px;
+        margin: 20px 0px 0px 0px;
         font-family: 'Source Sans 3';
         font-style: normal;
         font-weight: 600;
@@ -224,6 +226,21 @@
     }
    #secndh2{
        padding-top: 10px;
+   }
+   .small{
+       margin: 5px 0px;
+   }
+   .small>a{
+       text-decoration: none;
+       font-family: 'Work Sans';
+       font-style: normal;
+       font-weight: 700;
+       font-size: 15px;
+       padding: 5px 0px;
+       align-items: center;
+       text-align: center;
+       letter-spacing: -0.02em;
+       color: #1C274C;
    }
 
 </style>
@@ -257,6 +274,7 @@
             <form action="">
                 <input type="text" name="uname" id="uname" placeholder="Enter username"> <br>
                 <input type="password" name="password" id="password" placeholder="Enter password"> <br>
+                <span class="small"><a href="">Forget Password?</a></span>
                 <button class="button" style="vertical-align:middle"><span>Sign in </span></button>
                 <br>
                 <button class="button" style="vertical-align:middle" id="signup"><span>Sign up </span></button>
